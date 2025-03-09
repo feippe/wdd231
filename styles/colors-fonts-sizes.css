@@ -1,0 +1,21 @@
+:root {
+    --font-title: Kanit, Arial, Helvetica, sans-serif;
+    --font-body: Roboto, Arial, Helvetica, sans-serif;
+
+    --color-yellow: #FFCC0D;
+    --color-orange: #FF7326;
+    --color-red: #a70c30;
+    --color-pink: #81274e;
+    --color-violet: #702A8C;
+    --color-green: #afc59f;
+    --color-gray: #cccccc;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+
+    --tiny-size: 4px;
+    --small-size: 8px;
+    --normal-size: 16px;
+    --big-size: 24px;
+    --extra-big-size: 32px;
+}
