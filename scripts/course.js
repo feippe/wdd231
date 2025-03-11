@@ -78,49 +78,38 @@ const courses = [
     }
 ];
 
-var totalCredits = 0;
-courses.forEach(c => {
-    totalCredits += c.credits;
-    var a = document.createElement("a");
-    a.href = "";
-    a.setAttribute("category", c.subject);
-    a.setAttribute("credits", c.credits);
-    a.textContent = `${c.subject} ${c.number}`;
-    if (c.completed) {
-        a.className = "completed";
+function showCourses(list) {
+    var totalCredits = 0;
+    if (list.length > 0) {
+        list.forEach(c => {
+            totalCredits += c.credits;
+            var a = document.createElement("a");
+            a.href = "#";
+            a.textContent = `${c.subject} ${c.number}`;
+            if (c.completed) {
+                a.className = "completed";
+            }
+            document.querySelector("#courses-list").appendChild(a);
+        });
     }
-    document.querySelector("#courses-list").appendChild(a);
-});
-document.querySelector("#total-credits").innerHTML = `Total credits: <b>${totalCredits}</b>`;
+    document.querySelector("#total-credits").innerHTML = `Total credits: <b>${totalCredits}</b>`;
+}
 
 
 function changeFilter(event, type) {
-    console.log(this);
     document.querySelector("#filters .selected").classList.remove("selected");
     event.target.classList.add("selected");
     document.querySelectorAll("#courses-list a").forEach(a => {
         a.style.display = "none";
     });
-    var credits = 0;
-    switch (type) {
-        case "CSE":
-            document.querySelectorAll("#courses-list a[category='CSE']").forEach(a => {
-                a.style.display = "inline-block";
-                credits += Number(a.getAttribute("credits"));
-            });
-            break;
-        case "WDD":
-            document.querySelectorAll("#courses-list a[category='WDD']").forEach(a => {
-                a.style.display = "inline-block";
-                credits += Number(a.getAttribute("credits"));
-            });
-            break;
-        default:
-            document.querySelectorAll("#courses-list a").forEach(a => {
-                a.style.display = "inline-block";
-                credits += Number(a.getAttribute("credits"));
-            });
-            break;
-    }
-    document.querySelector("#total-credits b").textContent = credits;
+    var list = courses.reduce((acc, course) => {
+        if (type.toLowerCase() === "all" || course.subject.toLowerCase() === type.toLowerCase()) {
+            acc.push(course);
+        }
+        return acc;
+    }, []);
+    showCourses(list);
 }
+
+
+showCourses(courses);
