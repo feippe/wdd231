@@ -61,6 +61,7 @@ header nav a {
 header nav a.selected,
 header nav a:hover.selected {
     background-color: var(--color-orange);
+    color: var(--color-black);
 }
 
 header nav a:hover {
@@ -125,6 +126,7 @@ main h2 {
 
 #wcp-certificate div:nth-child(3) a.selected {
     background-color: var(--color-orange);
+    color: var(--color-black);
 }
 
 #wcp-certificate div:nth-child(4) {
