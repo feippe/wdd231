@@ -114,7 +114,7 @@ main h2 {
     padding-bottom: var(--small-size);
 }
 
-#wcp-certificate div:nth-child(3) a {
+#wcp-certificate div:nth-child(3) span {
     width: 100%;
     background-color: var(--color-black);
     border-radius: var(--tiny-size);
@@ -122,9 +122,10 @@ main h2 {
     padding: var(--tiny-size) 0;
     text-decoration: none;
     color: var(--color-white);
+    cursor: pointer;
 }
 
-#wcp-certificate div:nth-child(3) a.selected {
+#wcp-certificate div:nth-child(3) span.selected {
     background-color: var(--color-orange);
     color: var(--color-black);
 }
