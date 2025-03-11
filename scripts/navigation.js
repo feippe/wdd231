@@ -7,11 +7,9 @@ function closeMobileMenu() {
 
 
 document.querySelector("header nav span img").addEventListener('click', () => {
-    console.log("bbb");
     closeMobileMenu();
 });
 
 document.querySelector("#mobile-menu img").addEventListener('click', () => {
-    console.log("aaa");
     openMobileMenu();
 });

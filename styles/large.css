@@ -9,16 +9,12 @@
     }
 
     header nav {
-        display: inline-block;
+        display: flex;
         position: initial;
         background-color: var(--color-pink);
         width: 100%;
-        grid-template-columns: 1fr;
-        top: auto;
-        left: auto;
         height: auto;
         padding-top: 0;
-        grid-auto-rows: auto;
     }
 
     header nav span {
