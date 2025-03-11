@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/colors-fonts-sizes.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -54,10 +55,10 @@
         <section id="wcp-certificate">
             <h2>Web and Computer Programming Certificate</h2>
             <div id="total-credits"></div>
-            <div>
-                <a class="selected" onclick="changeFilter('All')">All</a>
-                <a onclick="changeFilter('CSE')">CSE</a>
-                <a onclick="changeFilter('WDD')">WDD</a>
+            <div id="filters">
+                <a class="selected" onclick="changeFilter(event, 'All')">All</a>
+                <a onclick="changeFilter(event, 'CSE')">CSE</a>
+                <a onclick="changeFilter(event, 'WDD')">WDD</a>
             </div>
             <div id="courses-list"></div>
         </section>

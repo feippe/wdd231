@@ -37,7 +37,7 @@ header nav {
     height: 100%;
     grid-template-columns: 1fr;
     grid-auto-rows: calc(var(--big-size) + var(--normal-size));
-    padding-top: var(--normal-size);
+    padding: var(--normal-size) var(--normal-size) 0 var(--normal-size);
 }
 
 header nav span {
@@ -54,6 +54,17 @@ header nav a {
     color: var(--color-white);
     padding: 0 var(--normal-size);
     line-height: calc(var(--big-size) + var(--normal-size));
+    transition: all .2s;
+    width: calc(100% - calc(var(--extra-big-size) * 2));
+}
+
+header nav a.selected,
+header nav a:hover.selected {
+    background-color: var(--color-orange);
+}
+
+header nav a:hover {
+    background-color: var(--color-black);
 }
 
 #mobile-menu {
