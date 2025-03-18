@@ -1,0 +1,183 @@
+body {
+    font-family: var(--font-body);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #FFF;
+    display: grid;
+    grid-template-columns: calc(100% - 24px) 24px;
+    padding: 16px;
+}
+
+#menuIcon {
+    width: 24px;
+}
+
+.closeIcon {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+#logoHeader {
+    display: grid;
+    grid-template-columns: 64px calc(100% - 64px);
+    grid-template-rows: auto auto;
+    font-family: var(--font-title);
+}
+
+#logoHeaderIcon {
+    width: 64px;
+    grid-row: span 2;
+}
+
+#logoHeaderIcon img {
+    width: 100%;
+}
+
+#logoHeaderName {
+    align-self: end;
+    font-size: 24px;
+}
+
+#logoHeaderTagLine {
+    align-self: start;
+    font-size: 16px;
+}
+
+#heroBanner {
+    width: calc(100% - 32px);
+    height: 210px;
+    background-image: url(../images/sankore-madrasa-oldest-university-sub-saharan-africa-timbuktu-mali-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    padding: 16px;
+}
+
+#heroBanner button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: var(--button-color);
+    justify-self: end;
+    align-self: end;
+    font-weight: bold;
+}
+
+.mainContent {
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mainCube {
+    -webkit-box-shadow: 0px 4px 14px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 14px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 14px -5px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.mainCube h3 {
+    padding: 8px 0;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: #FFF;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.mainCube-content {
+    padding: 16px;
+}
+
+.mainCube-content>div>img {
+    width: 100%;
+}
+
+#weatherContent .mainCube-content {
+    display: grid;
+    grid-template-columns: 64px calc(100% - 64px - 16px);
+    gap: 16px;
+}
+
+
+.businessCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    -webkit-box-shadow: 0px 4px 14px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 14px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 14px -5px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.businessCard-name {
+    grid-column: span 3;
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.businessCard-name h3 {
+    margin: 0;
+}
+
+.businessCard-tagLine {
+    grid-column: span 3;
+    padding: 8px 16px;
+
+}
+
+.businessCard-imageContent {
+    grid-row: span 3;
+    padding: 8px 0 16px 16px;
+}
+
+.businessCard-imageContent img {
+    width: 100%;
+}
+
+.businessCard-email,
+.businessCard-phone,
+.businessCard-url {
+    grid-column: span 2;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: #FFF;
+    margin-top: 32px;
+}
+
+#addressContent {
+    padding: 16px 16px 0 16px;
+}
+
+#socialMediaContent {
+    padding: 16px 16px 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#socialMediaContent>div {
+    padding: 16px;
+}
+
+#socialMediaContent>div>img {
+    width: 100%;
+}
+
+#personalInformationContent {
+    padding: 16px;
+}
