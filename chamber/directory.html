@@ -45,7 +45,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="directory.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#" class="active">Business Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -55,80 +55,55 @@
 
     <main>
         <div id="heroBanner">
-            <button type="button">Keynote Tickets</button>
+            <button type="button" class="button">Keynote Tickets</button>
         </div>
         <div class="mainContent">
             <h2>Home</h2>
-            <div class="mainCube" id="eventsContent">
-                <h3>Events</h3>
-                <div class="mainCube-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor quis orci eget laoreet.
-                    Donec in consequat justo, posuere suscipit justo. Duis pharetra purus nec.
+            <div id="mainCubes">
+                <div class="mainCube" id="eventsContent">
+                    <h3>Events</h3>
+                    <div class="mainCube-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor quis orci eget
+                        laoreet.
+                        Donec in consequat justo, posuere suscipit justo. Duis pharetra purus nec.
+                    </div>
+                </div>
+                <div class="mainCube" id="weatherContent">
+                    <h3>Current Weather</h3>
+                    <div class="mainCube-content">
+                        <div>
+                            <img src="images/cloudy.svg" alt="Cloudy">
+                        </div>
+                        <div>
+                            <div><b>75°</b>F</div>
+                            <div>Party Cloudy</div>
+                            <div>High: 85°</div>
+                            <div>Low: 52°</div>
+                            <div>Humidity: 34%</div>
+                            <div>Sunrise: 7:30am</div>
+                            <div>Sunset: 9:59pm</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainCube" id="forecastContent">
+                    <h3>Weather Forecast</h3>
+                    <div class="mainCube-content">
+                        <div>Today: <b>90°F</b></div>
+                        <div>Wednesday: <b>89°F</b></div>
+                        <div>Thursday: <b>68°F</b></div>
+                    </div>
                 </div>
             </div>
-            <div class="mainCube" id="weatherContent">
-                <h3>Current Weather</h3>
-                <div class="mainCube-content">
-                    <div>
-                        <img src="images/cloudy.svg" alt="Cloudy">
-                    </div>
-                    <div>
-                        <div><b>75°</b>F</div>
-                        <div>Party Cloudy</div>
-                        <div>High: 85°</div>
-                        <div>Low: 52°</div>
-                        <div>Humidity: 34%</div>
-                        <div>Sunrise: 7:30am</div>
-                        <div>Sunset: 9:59pm</div>
-                    </div>
-                </div>
+            <div id="headerMembersList">
+                <h3>Members</h3>
+                <span id="gridButton">
+                    <i class="fas fa-th-large"></i>
+                </span>
+                <span id="listButton">
+                    <i class="fas fa-th-list"></i>
+                </span>
             </div>
-            <div class="mainCube" id="forecastContent">
-                <h3>Weather Forecast</h3>
-                <div class="mainCube-content">
-                    <div>Today: <b>90°F</b></div>
-                    <div>Wednesday: <b>89°F</b></div>
-                    <div>Thursday: <b>68°F</b></div>
-                </div>
-            </div>
-            <div id="businessCardsContent">
-                <div class="businessCard">
-                    <div class="businessCard-name">
-                        <h3>Business Name</h3>
-                    </div>
-                    <div class="businessCard-tagLine">Business tag line</div>
-                    <div class="businessCard-imageContent">
-                        <img src="images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg" alt="Business Image">
-                    </div>
-                    <div class="businessCard-email"><b>EMAIL: </b>info@gmail.com</div>
-                    <div class="businessCard-phone"><b>PHONE: </b>800-555-134</div>
-                    <div class="businessCard-url"><b>URL: </b>mybusiness.com</div>
-                </div>
-                <div class="businessCard">
-                    <div class="businessCard-name">
-                        <h3>Business Name</h3>
-                    </div>
-                    <div class="businessCard-tagLine">Business tag line</div>
-                    <div class="businessCard-imageContent">
-                        <img src="images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg" alt="Business Image">
-                    </div>
-                    <div class="businessCard-email"><b>EMAIL: </b>info@gmail.com</div>
-                    <div class="businessCard-phone"><b>PHONE: </b>800-555-134</div>
-                    <div class="businessCard-url"><b>URL: </b>mybusiness.com</div>
-                </div>
-                <div class="businessCard">
-                    <div class="businessCard-name">
-                        <h3>Business Name</h3>
-                    </div>
-                    <div class="businessCard-tagLine">Business tag line</div>
-                    <div class="businessCard-imageContent">
-                        <img src="images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg" alt="Business Image">
-                    </div>
-                    <div class="businessCard-email"><b>EMAIL: </b>info@gmail.com</div>
-                    <div class="businessCard-phone"><b>PHONE: </b>800-555-134</div>
-                    <div class="businessCard-url"><b>URL: </b>mybusiness.com</div>
-                </div>
-            </div>
+            <div id="businessCardsContent" class="grid"></div>
         </div>
     </main>
 
@@ -141,21 +116,22 @@
             <div>(223) 555-2300</div>
         </div>
         <div id="socialMediaContent">
-            <div><img src="images/youtube.svg" alt="Youtube"></div>
-            <div><img src="images/twitter.svg" alt="Twitter"></div>
-            <div><img src="images/linkedin.svg" alt="LinkedIn"></div>
+            <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
         </div>
         <div id="personalInformationContent">
             <div>WDD231 Class Project</div>
             <div>Gabriel Feippe</div>
-            <div>&copy; 2025 Timbuktu Chamber of Commerce</div>
-            <div>Last Modification: 03/17/2025 22:31:55</div>
+            <div>&copy; <span id="footerYear"></span> Timbuktu Chamber of Commerce</div>
+            <div id="lastModification"></div>
         </div>
     </footer>
 
     <script src="scripts/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/64bae2eb6d.js" crossorigin="anonymous"></script>
     <script src="scripts/members.js"></script>
+    <script src="https://kit.fontawesome.com/64bae2eb6d.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

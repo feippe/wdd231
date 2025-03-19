@@ -1,0 +1,74 @@
+@media only screen and (min-width: 800px) {
+    header {
+        grid-template-columns: 280px auto;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+
+    nav {
+        display: inline-block;
+        position: initial;
+        height: 68px;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 32px);
+    }
+
+    #mainCubes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+    }
+
+    #eventsContent {
+        grid-column: span 2;
+    }
+
+    #businessCardsContent.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .list .businessCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        border-top: solid 1px var(--primary-color);
+        margin-bottom: 16px;
+        font-size: 16px;
+        padding-top: 16px;
+    }
+
+    .list .businessCard-name h3 {
+        margin: 0;
+    }
+
+    #gridButton,
+    #listButton {
+        cursor: pointer;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        padding-bottom: 16px;
+    }
+
+    #personalInformationContent {
+        text-align: right;
+    }
+}

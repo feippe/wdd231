@@ -1,0 +1,114 @@
+{
+    "members": [
+        {
+            "name": "Tech Innovators Inc.",
+            "address": "123 Innovation Drive",
+            "city": "Tech City",
+            "country": "Countryland",
+            "phoneNumber": "+1234567890",
+            "email": "info@techinnovators.com",
+            "websiteUrl": "techinnovators.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Green Energy Solutions",
+            "address": "456 Eco Street",
+            "city": "Sustainable Town",
+            "country": "Countryland",
+            "phoneNumber": "+0987654321",
+            "email": "info@greenenergy.com",
+            "websiteUrl": "greenenergy.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Fintech Pioneers",
+            "address": "789 Finance Avenue",
+            "city": "Money City",
+            "country": "Countryland",
+            "phoneNumber": "+1122334455",
+            "email": "info@fintechpioneers.com",
+            "websiteUrl": "fintechpioneers.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Health & Wellness Co.",
+            "address": "101 Wellness Way",
+            "city": "Healthville",
+            "country": "Countryland",
+            "phoneNumber": "+9988776655",
+            "email": "info@healthwellness.com",
+            "websiteUrl": "healthwellness.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Travel Ventures Ltd.",
+            "address": "202 Adventure Road",
+            "city": "Traveltown",
+            "country": "Countryland",
+            "phoneNumber": "+6677889900",
+            "email": "info@travelventures.com",
+            "websiteUrl": "travelventures.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Foodies Paradise",
+            "address": "303 Culinary Street",
+            "city": "Gourmet City",
+            "country": "Countryland",
+            "phoneNumber": "+5566778899",
+            "email": "info@foodiesparadise.com",
+            "websiteUrl": "foodiesparadise.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "EduTech Innovators",
+            "address": "404 Learning Lane",
+            "city": "Education City",
+            "country": "Countryland",
+            "phoneNumber": "+4455667788",
+            "email": "info@edutechinnovators.com",
+            "websiteUrl": "edutechinnovators.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Fashion Forward",
+            "address": "505 Style Street",
+            "city": "Fashion Town",
+            "country": "Countryland",
+            "phoneNumber": "+3344556677",
+            "email": "info@fashionforward.com",
+            "websiteUrl": "fashionforward.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Real Estate Experts",
+            "address": "606 Property Avenue",
+            "city": "Realty City",
+            "country": "Countryland",
+            "phoneNumber": "+2233445566",
+            "email": "info@realestateexperts.com",
+            "websiteUrl": "realestateexperts.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Auto Innovators",
+            "address": "707 Motorway",
+            "city": "Autotown",
+            "country": "Countryland",
+            "phoneNumber": "+1122334455",
+            "email": "info@autoinnovators.com",
+            "websiteUrl": "autoinnovators.com",
+            "image": "images/360_F_52149432_4FhRgWtKJQFCM299StO3te3zwXF5KAfE.jpg",
+            "membershipLevel": 3
+        }
+    ]
+}

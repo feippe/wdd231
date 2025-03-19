@@ -20,6 +20,27 @@ header {
 
 nav {
     display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    width: calc(100% - 32px);
+    padding: 16px 32px;
 }
 
 #logoHeader {
@@ -59,7 +80,7 @@ nav {
     padding: 16px;
 }
 
-#heroBanner button {
+.button {
     border: none;
     padding: 8px 16px;
     border-radius: 100px;
@@ -67,6 +88,12 @@ nav {
     justify-self: end;
     align-self: end;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--button-color-hover);
+    color: #FFF;
 }
 
 .mainContent {
@@ -107,8 +134,11 @@ nav {
     gap: 16px;
 }
 
+#headerMembersList {
+    margin-bottom: 16px;
+}
 
-.businessCard {
+.grid .businessCard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
@@ -119,7 +149,15 @@ nav {
     margin-bottom: 16px;
 }
 
-.businessCard-name {
+.list .businessCard {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    border-top: solid 1px var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.grid .businessCard-name {
     grid-column: span 3;
     background-color: var(--primary-color);
     color: #FFF;
@@ -128,29 +166,38 @@ nav {
     border-top-right-radius: 4px;
 }
 
-.businessCard-name h3 {
+.grid .businessCard-name h3 {
     margin: 0;
 }
 
-.businessCard-tagLine {
+.grid .businessCard-tagLine {
     grid-column: span 3;
     padding: 8px 16px;
 
 }
 
-.businessCard-imageContent {
+.grid .businessCard-imageContent {
     grid-row: span 3;
     padding: 8px 0 16px 16px;
 }
 
-.businessCard-imageContent img {
+.list .businessCard-imageContent {
+    display: none;
+}
+
+.grid .businessCard-imageContent img {
     width: 100%;
 }
 
-.businessCard-email,
-.businessCard-phone,
-.businessCard-url {
+.grid .businessCard-email,
+.grid .businessCard-phone,
+.grid .businessCard-url {
     grid-column: span 2;
+    padding-right: 16px;
+}
+
+.grid .businessCard-url {
+    margin-bottom: 16px;
 }
 
 footer {
@@ -170,11 +217,11 @@ footer {
     gap: 16px;
 }
 
-#socialMediaContent>div {
+#socialMediaContent>a {
     padding: 16px;
 }
 
-#socialMediaContent>div>img {
+#socialMediaContent>a>img {
     width: 100%;
 }
 
