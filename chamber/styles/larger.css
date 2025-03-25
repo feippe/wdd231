@@ -27,6 +27,11 @@
         height: calc(100% - 32px);
     }
 
+    nav ul li a.selected {
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+    }
+
     #mainCubes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

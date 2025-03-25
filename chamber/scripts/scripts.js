@@ -22,6 +22,22 @@ async function addHeader() {
         document.querySelector("#menuIcon .openIcon").style.display = "inline-block";
         document.querySelector("body").style.overflowY = "auto";
     });
+
+    switch (getPageFile()) {
+        case "index.html":
+            document.querySelector("nav>ul>li:nth-child(1)>a").className = "selected";
+            break;
+        case "discover.html":
+            document.querySelector("nav>ul>li:nth-child(2)>a").className = "selected";
+            break;
+        case "directory.html":
+            document.querySelector("nav>ul>li:nth-child(3)>a").className = "selected";
+            break;
+        case "join.html":
+            document.querySelector("nav>ul>li:nth-child(4)>a").className = "selected";
+            break;
+
+    }
 }
 
 async function addFooter() {
@@ -37,4 +53,9 @@ async function addFooter() {
     const date = new Date();
     let year = date.getFullYear();
     document.getElementById("footerYear").innerHTML = year;
+}
+
+function getPageFile() {
+    let path = window.location.pathname;
+    return path === "/" ? "index.html" : path.split("/").pop();
 }
