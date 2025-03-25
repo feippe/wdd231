@@ -38,7 +38,7 @@ async function getMembers() {
 function displayMembers(data) {
     let membersContent = document.getElementById("businessCardsContent");
     let list = data.members;
-    if (membersContent.getAttribute("type") != undefined && membersContent.getAttribute("type") == "spotlight") {
+    if (membersContent.classList.contains("spotlight")) {
         list = list.filter(member => member.membershipLevel > 1);
         list = list.sort(() => Math.random() - 0.5);
         list = list.slice(0, 3);
