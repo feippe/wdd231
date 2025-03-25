@@ -128,7 +128,14 @@ nav ul li a {
     width: 100%;
 }
 
-#weatherContent .mainCube-content {
+#weatherContent2>div:nth-child(2) {
+    background-color: var(--background-card-weather);
+    margin: 8px 8px 0 8px;
+    border-radius: 4px;
+}
+
+#weatherContent .mainCube-content,
+#weatherContent2 .mainCube-content {
     display: grid;
     grid-template-columns: 64px calc(100% - 64px - 16px);
     gap: 16px;
@@ -177,7 +184,7 @@ nav ul li a {
 }
 
 .grid .businessCard-imageContent {
-    grid-row: span 3;
+    grid-row: span 4;
     padding: 8px 0 16px 16px;
 }
 
@@ -196,7 +203,7 @@ nav ul li a {
     padding-right: 16px;
 }
 
-.grid .businessCard-url {
+.grid .businessCard-membership {
     margin-bottom: 16px;
 }
 

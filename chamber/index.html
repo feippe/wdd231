@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Directory - Timbuktu Chamber of Commerce</title>
+    <title>Home - Timbuktu Chamber of Commerce</title>
     <meta name="description"
         content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
     <meta name="author" content="Gabriel Feippe">
-    <meta property="og:title" content="Directory - Timbuktu Chamber of Commerce">
+    <meta property="og:title" content="Home - Timbuktu Chamber of Commerce">
     <meta property="og:description"
         content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
     <meta property="og:url" content="https://feippe.github.io/wdd231/chamber">
@@ -22,52 +22,80 @@
     <link rel="stylesheet" href="styles/colors-fonts.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 
 <body>
     <main>
         <div id="heroBanner">
-            <button type="button" class="button">Keynote Tickets</button>
+            <button type="button" class="button">Join Us</button>
         </div>
         <div class="mainContent">
-            <h1>Business Directory</h1>
+            <h1>Home</h1>
             <div id="mainCubes">
                 <div class="mainCube" id="eventsContent">
-                    <h3>Events</h3>
+                    <h3>Current Events</h3>
                     <div class="mainCube-content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor quis orci eget
                         laoreet.
                         Donec in consequat justo, posuere suscipit justo. Duis pharetra purus nec.
                     </div>
                 </div>
-                <div class="mainCube" id="weatherContent">
-                    <h3>Current Weather</h3>
-                    <div class="mainCube-content">
-                        <div>
+                <div class="mainCube" id="weatherContent2">
+                    <h3>Weather</h3>
+                    <div class="mainCube-content" id="mcw-0">
+                        <div class="icon">
                             <img src="images/cloudy.svg" alt="Cloudy">
                         </div>
                         <div>
-                            <div><b>75°</b>F</div>
-                            <div>Party Cloudy</div>
-                            <div>High: 85°</div>
-                            <div>Low: 52°</div>
-                            <div>Humidity: 34%</div>
-                            <div>Sunrise: 7:30am</div>
-                            <div>Sunset: 9:59pm</div>
+                            <div class="day"></div>
+                            <div class="temp"><b></b>F</div>
+                            <div class="description"></div>
+                            <div class="high"></div>
+                            <div class="low"></div>
+                        </div>
+                    </div>
+                    <div class="mainCube-content" id="mcw-1">
+                        <div class="icon">
+                            <img src="images/cloudy.svg" alt="Cloudy">
+                        </div>
+                        <div>
+                            <div class="day"></div>
+                            <div class="temp"><b></b>F</div>
+                            <div class="description"></div>
+                            <div class="high"></div>
+                            <div class="low"></div>
+                        </div>
+                    </div>
+                    <div class="mainCube-content" id="mcw-2">
+                        <div class="icon">
+                            <img src="images/cloudy.svg" alt="Cloudy">
+                        </div>
+                        <div>
+                            <div class="day"></div>
+                            <div class="temp"><b></b>F</div>
+                            <div class="description"></div>
+                            <div class="high"></div>
+                            <div class="low"></div>
+                        </div>
+                    </div>
+                    <div class="mainCube-content" id="mcw-3">
+                        <div class="icon">
+                            <img src="images/cloudy.svg" alt="Cloudy">
+                        </div>
+                        <div>
+                            <div class="day"></div>
+                            <div class="temp"><b></b>F</div>
+                            <div class="description"></div>
+                            <div class="high"></div>
+                            <div class="low"></div>
                         </div>
                     </div>
                 </div>
-                <div class="mainCube" id="forecastContent">
-                    <h3>Weather Forecast</h3>
-                    <div class="mainCube-content">
-                        <div>Today: <b>90°F</b></div>
-                        <div>Wednesday: <b>89°F</b></div>
-                        <div>Thursday: <b>68°F</b></div>
-                    </div>
-                </div>
+
             </div>
             <div id="headerMembersList">
-                <h3>Members</h3>
+                <h3>Spotlight Members</h3>
                 <span id="gridButton">
                     <i class="fas fa-th-large"></i>
                 </span>
@@ -75,13 +103,14 @@
                     <i class="fas fa-th-list"></i>
                 </span>
             </div>
-            <div id="businessCardsContent" class="grid" type="all"></div>
+            <div id="businessCardsContent" class="grid" type="spotlight"></div>
         </div>
     </main>
-
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/wheater.js"></script>
     <script src="scripts/members.js"></script>
     <script src="https://kit.fontawesome.com/64bae2eb6d.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

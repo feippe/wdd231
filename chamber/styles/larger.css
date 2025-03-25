@@ -33,9 +33,54 @@
         gap: 16px;
     }
 
-    #eventsContent {
+    #eventsContent,
+    #weatherContent2 {
         grid-column: span 2;
     }
+
+    #weatherContent2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+    }
+
+    #weatherContent2 h3 {
+        grid-column: span 3;
+    }
+
+    #weatherContent2 #mcw-0 {
+        grid-column: span 3;
+    }
+
+    #weatherContent2>div:nth-child(2) {
+        grid-template-columns: 128px calc(100% - 128px - 16px);
+        margin: 0 8px 0 8px;
+    }
+
+    #weatherContent2>div:nth-child(2) .icon {
+        background-color: #FFF;
+        border-radius: 4px;
+    }
+
+    #weatherContent2 div:nth-child(3),
+    #weatherContent2 div:nth-child(4),
+    #weatherContent2 div:nth-child(5) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px auto;
+    }
+
+    #mcw-1>div>img,
+    #mcw-2>div>img,
+    #mcw-3>div>img {
+        width: auto;
+        height: 100%;
+    }
+
+    .mainCube-content .icon {
+        text-align: center;
+    }
+
+
 
     #businessCardsContent.grid {
         display: grid;
