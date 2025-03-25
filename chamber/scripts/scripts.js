@@ -57,5 +57,5 @@ async function addFooter() {
 
 function getPageFile() {
     let path = window.location.pathname;
-    return path === "/" ? "index.html" : path.split("/").pop();
+    return path === "/wdd231/chamber/" ? "index.html" : path.split("/").pop();
 }
